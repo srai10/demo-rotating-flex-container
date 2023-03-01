@@ -1,0 +1,29 @@
+.row,
+.column {
+    display: flex;
+    gap: 1rem;
+    background-color: palegoldenrod;
+    margin-bottom: 2rem;
+}
+
+.flex-item {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 1rem;
+}
+
+when dealing with extra space within the container, there are two axis (main & cross)
+/* justify-content is the main
+align-items is the cross
+*/
+
+.row {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* when rotating a flex container, the axis and properties rotate as well. justify-content is now going to be top-bottom while align-items is now left-right */
+.column {
+    flex-flow: column nowrap;
+    align-items: center;
+}
